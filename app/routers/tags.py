@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlmodel import Session, select
 
-from app.dependencies import get_session
+from app.dependencies import get_session, get_current_user
 from app.models.tag import Tag
 from app.models.task import Task
 from app.schemas.tag import TagCreate, TagOut
 
-router = APIRouter(prefix="/tags", tags=["tags"])
+router = APIRouter(prefix="/tags", tags=["tags"], dependencies=[Depends(get_current_user)])
 
 
 @router.get("/", response_model=list[TagOut])
