@@ -1,0 +1,23 @@
+# virtual environment
+.venv/
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# database 
+*.db
+*.sqlite3
+
+# environment secrets 
+.env
+
+# uv
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store

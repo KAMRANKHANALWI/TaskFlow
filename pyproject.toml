@@ -1,0 +1,15 @@
+[project]
+name = "taskflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "email-validator>=2.3.0",
+    "fastapi>=0.135.3",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic-settings>=2.13.1",
+    "python-jose[cryptography]>=3.5.0",
+    "sqlmodel>=0.0.38",
+    "uvicorn>=0.43.0",
+]
