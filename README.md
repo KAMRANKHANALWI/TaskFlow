@@ -148,6 +148,4 @@ GET  /any-protected → send token as: Authorization: Bearer <token>
 - [x] Phase 2 — CRUD routers (projects, tasks, tags)
 - [x] Phase 3 — JWT auth (register, login, protected routes, ownership)
 - [x] Phase 4 — Middleware, exception handlers, background tasks
-- [ ] Phase 5 — Next.js frontend
-- [ ] Phase 6 — Forgot password + email integration
-- [ ] Phase 7 — Deploy (Railway / Render)
+
